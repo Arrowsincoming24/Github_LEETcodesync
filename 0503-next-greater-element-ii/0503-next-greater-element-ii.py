@@ -15,7 +15,7 @@ class Solution(object):
                 previous_index = stack.pop()
                 answer[previous_index] = nums[index]
 
-            # Add each index only during the first round
+       
             if position < length:
                 stack.append(index)
 
