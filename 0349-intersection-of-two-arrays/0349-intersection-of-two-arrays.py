@@ -8,7 +8,7 @@ class Solution(object):
         r = []
 
         for i in nums1:
-            if i in nums2:
+            if i in nums2 and i not in r:
                 r.append(i)
 
-        return list(set(r))
+        return r
